@@ -1,4 +1,5 @@
 #include<avr/io.h>
+#include<LiquidCrystal.h>
 
 /*Microcontrollers Atmega8/48/88/168/328 pin out configuration */
 /*Interface of Port D*/
