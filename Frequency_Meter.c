@@ -50,3 +50,8 @@ int main(){
 pinMode(SYNC, INPUT); //
 LCD_1602.begin(16, 2); //
 }
+
+
+void config(){
+  
+}
