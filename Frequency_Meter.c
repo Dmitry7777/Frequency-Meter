@@ -29,6 +29,24 @@
 #define MCU_TWI_PORTC_ADC_PC5_A5_SCL 0x13; //
 #define MCU_TWI_PORTC_ADC_PC6_RESET 0x14; //
 
+const int LCD_RS = MCU_SPI_PORTB_PB0; //
+//const int  LCD_RW = MCU_PIN; //
+const int  LCD_E = MCU_SPI_PORTB_PB1; //
+const int  LCD_DB0 = MCU_USART_PORTD_PD0_RXD; //
+const int  LCD_DB1 = MCU_USART_PORTD_PD1_TXD; //
+const int  LCD_DB2 = MCU_USART_PORTD_PD2; //
+const int  LCD_DB3 = MCU_USART_PORTD_PD3; //
+const int  LCD_DB4 = MCU_USART_PORTD_PD4; //
+const int  LCD_DB5 = MCU_USART_PORTD_PD5; //
+const int  LCD_DB6 = MCU_USART_PORTD_PD6; //
+const int  LCD_DB7 = MCU_USART_PORTD_PD7; //
+
+LiquidCrystal LCD_1602(LCD_RS, LCD_E, LCD_DB0, LCD_DB1, LCD_DB2, LCD_DB3, LCD_DB4, LCD_DB5, LCD_DB6, LCD_DB7); //
+
+const int SYNC = MCU_TWI_PORTC_ADC_PC5_A5_SCL; //
+
 int main(){
 
+pinMode(SYNC, INPUT); //
+LCD_1602.begin(16, 2); //
 }
