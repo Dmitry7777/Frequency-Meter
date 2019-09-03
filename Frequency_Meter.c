@@ -1,3 +1,7 @@
+/*
+ * Frequency meter on C-language
+ */
+
 #include<avr/io.h>
 #include<LiquidCrystal.h>
 
@@ -44,6 +48,10 @@ const int  LCD_DB7 = MCU_USART_PORTD_PD7; //
 LiquidCrystal LCD_1602(LCD_RS, LCD_E, LCD_DB0, LCD_DB1, LCD_DB2, LCD_DB3, LCD_DB4, LCD_DB5, LCD_DB6, LCD_DB7); //
 
 const int SYNC = MCU_TWI_PORTC_ADC_PC5_A5_SCL; //
+
+float ResultOfFrequency; //Result Of Frequency
+int PulseMode; //Pulse Mode
+int PulseEnable; //Pulse Enable
 
 int main(){
 
