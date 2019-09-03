@@ -49,6 +49,8 @@ int main(){
 
 pinMode(SYNC, INPUT); //
 LCD_1602.begin(16, 2); //
+LCD_1602.setCursor(0, 0); //
+LCD_1602.print("Frequency Meter"); //
 }
 
 
